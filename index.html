@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=0.7, maximum-scale=0.7, user-scalable=no">
+    <title>Landing page | Pizzaria</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" rel="stylesheet">
+</head>
+
+<body background="imagens/background.jpg">
+
+    <!--Menu navegação
+    ----------------------------------------------->
+    <nav class="menu" id="menu">
+        <div class="menuLateral" id="menuLateral">
+            <h1 class="logo">LOGO</h1>
+            <i class="fas fa-bars" id="menuBarra" onclick="menuLateral()"></i>
+
+            <ul id="listaMenu">
+                <li><a href="#">Início</a></li>
+                <li><a href="#sobre">Sobre nós</a></li>
+                <li><a href="#pizzas">Portifólio</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+        </div>
+        
+        
+    </nav>
+
+    <!--Corpo
+    ------------------------------------------------>
+    <main class="corpo" id="corpo">
+        <h1>Promoção</h1>
+        <h2>Imperdível</h2>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloremque voluptatum quas non, quod volu
+            ptas soluta ratione. Neque suscipit modi eius minus placeat? Incidunt cum ipsa dolores dicta perspic
+            iatis. Distinctio, quae.</p>
+        <a href="#" id="pedirAgora">Pedir agora</a>
+    </main>
+
+    <!--Aba sobre nós
+    ------------------------------------------------>
+    <div class="sobre" id="sobre">
+        <h1>Por que comprar conosco...</h1>
+        <hr>
+        <div class="janelaSobre" id="janelaSobre_1">
+            <ul>
+                <li><i class="fas fa-truck"></i></li>
+                <li><h2>Entrega mais <br>rápida da cidade</h2></li>
+                <li><h3>Entregamos em todo a cidade.</h3></li>
+            </ul>
+        </div>
+
+        <div class="janelaSobre" id="janelaSobre_2">
+            <ul>
+                <li><i class="fas fa-money-bill-wave"></i></li>
+                <li><h2>Melhor preço</h2></li>
+                <li><h3>Um valor que cabe no<br> seu bolso.</h3></li>
+            </ul>
+        </div>
+
+        <div class="janelaSobre" id="janelaSobre_3">
+            <ul>
+                <li><i class="fas fa-pizza-slice"></i></li>
+                <li><h2>Sabor nunca antes visto</h2></li>
+                <li><h3>Inconfundível, indispensável,<br>   incrível!</h3></li>
+            </ul>
+        </div>
+    </div>
+
+    <!--Aba com valor das pizzas
+    ----------------------------------------------->
+    <section class="pizzas" id="pizzas">
+        
+        <div class="pizzaCabeca">
+            <h1>Escolha sua pizza favorita...</h1>
+            <h4>Comer bem não tem preço!</h4>
+        </div>
+        <div class="janelaPizza" id="janelaPizza_1">
+            <ul>
+                <li><i class="fas fa-pizza-slice"></i></li>
+                <li><h2>Nome da pizza</h2></li>
+                <li><h4>Descrição da pizza</h4></li>
+                <li><hr></li>
+                <li><p>Ingrediente 1</p></li>
+                <li><p>Ingrediente 2</p></li>
+                <li><p>Ingrediente 3</p></li>
+                <li><p>Ingrediente 4</p></li>
+                <li><p>Ingrediente 5</p></li>
+            </ul>
+            <button class="janelaPizza_Btn">Comprar agora!<br>R$ 00,00</button>
+        </div>
+
+        <div class="janelaPizza" id="janelaPizza_2">
+            <ul>
+                <li><i class="fas fa-pizza-slice"></i></li>
+                <li><h2>Nome da pizza</h2></li>
+                <li><h4>Descrição da pizza</h4></li>
+                <li><hr></li>
+                <li><p>Ingrediente 1</p></li>
+                <li><p>Ingrediente 2</p></li>
+                <li><p>Ingrediente 3</p></li>
+                <li><p>Ingrediente 4</p></li>
+                <li><p>Ingrediente 5</p></li>
+            </ul>
+            <button class="janelaPizza_Btn">Comprar agora!<br>R$ 00,00</button>
+        </div>
+        
+        <div class="janelaPizza" id="janelaPizza_3">
+            <ul>
+                <li><i class="fas fa-pizza-slice"></i></li>
+                <li><h2>Nome da pizza</h2></li>
+                <li><h4>Descrição da pizza</h4></li>
+                <li><hr></li>
+                <li><p>Ingrediente 1</p></li>
+                <li><p>Ingrediente 2</p></li>
+                <li><p>Ingrediente 3</p></li>
+                <li><p>Ingrediente 4</p></li>
+                <li><p>Ingrediente 5</p></li>
+            </ul>
+            <button class="janelaPizza_Btn">Comprar agora!<br>R$ 00,00</button>
+        </div>
+    </section>
+
+    <!--Aba de contato
+    -------------------------------------------------------->
+    <div class="contato" id="contato">
+        <h1>Entre em contato conosco...</h1>
+
+        <div class="iconesContato">
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-whatsapp"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+        </div>
+
+        <form action="https://api.staticforms.xyz/submit" method="post" class="formularioContato"> <!--Servidor staticform-->
+            <h3>Contato comercial:</h3>
+            <input type="hidden" name="redirectTo" value="https://diluvial-hardcopy.000webhostapp.com/#contato"> <!--Ao clicar submit atualiza a pagina-->
+            <input type="hidden" name="accessKey" value="d7e21213-f8ac-4b00-b3e4-b210a3847245"> <!--Chave de acesso-->
+
+            <input type="text" id="txtNome" name="name" placeholder="Seu nome...">
+            <input type="text" id="txtEmail" name="email" placeholder="E-mail...">
+            <input type="text" id="txtAssunto" name="subject" placeholder="Assunto...">
+            <textarea type="text" id="txtArea"  name="message" placeholder="Mensagem..."></textarea>
+            <button id="contato_btnEnviar" value="submit">Enviar</button>
+        </form>
+    </div>
+
+    <!--Rodapé
+    --------------------------------------------------->
+    <footer class="rodape">
+        <p>&copy; criado por Paulo Queiroz - (21) 99241-9980</p>
+    </footer>
+
+    <!--Link do javascript
+    ------------------------------------------------------->
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,572 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+/*Animaçoes
+------------------------------------*/
+
+@-webkit-keyframes fade{
+    from{opacity: .2;}
+    to{opacity: 1;}
+}
+
+@keyframes fade{
+    from{opacity: .2;}
+    to{opacity: 1;}
+}
+
+/*Menu
+---------------------------------*/
+.menu{
+    color: white;
+    position: fixed;
+    background-color: rgb(0, 0, 0, 0.60);
+    height: 80px;
+    width: 100%;
+    z-index: 1;
+    transition: 0.5s;
+    overflow: hidden;
+}
+
+#checkMenu{
+    display: none;
+}
+
+#menuBarra{
+    display: none;
+    font-size: 28pt;
+    cursor: pointer;
+    position: fixed;
+    top: 3%;
+    color: white;
+    font-weight: bold;
+}
+
+
+#menuBarra:hover{
+    font-size: 29pt;
+}
+
+.logo{
+    cursor: pointer;
+    position: fixed;
+    left: 150px;
+    top: 21px;
+    width: fit-content;
+    font-size: 22pt;
+}
+#listaMenu{
+    position: relative;
+    top: 25px;
+    left: 45%;
+}
+.menu ul li{
+   display: inline-block;
+   margin-right: 25px;
+}
+
+.menu ul li a{
+    text-decoration: none;
+    color: white;
+    font-size: 16pt;
+}
+
+.menu ul li a:hover{
+    border-bottom: 3px solid rgb(172, 28, 28);
+}
+
+
+/*Corpo
+---------------------------------------*/
+.corpo{
+    width: 45%;
+    height: 625px;
+    position: relative;
+    left: 150px;
+    top: 100px;
+}
+
+.corpo h1{
+    font-size: 40pt;
+    color: white;
+}
+
+.corpo h2{
+    font-size: 38pt;
+    margin-bottom: 20px;
+    color:rgb(170, 37, 37);
+}
+
+.corpo p{
+    font-size: 23pt;
+    color: white;
+}
+
+#pedirAgora{
+    color: black;
+    background-color: white;
+    border-radius: 10px 3px 10px 3px;
+    border: none;
+    padding: 13px;
+    font-weight: bold;
+    font-size: 12pt;
+    cursor: pointer;
+    text-decoration: none;
+    position: absolute;
+    margin-top: 15px;
+    box-shadow: 1px 1px 10px black;
+}
+
+#pedirAgora:hover{
+    background-color: rgb(170, 37, 37);
+    color: white;
+}
+
+/*Sobre nós
+--------------------------------------*/
+.sobre{
+    height: 625px;
+    position: relative;
+    background-color: rgb(32, 15, 15);
+}
+
+.sobre hr{
+    border-top: 2px dashed white;
+    border-bottom: none;
+    position: absolute;
+    top: 240px;
+    width: 100%;
+}
+
+.sobre h1{
+    color: white;
+    font-size: 36pt;
+    text-shadow:2px 2px 5px black;
+
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 35px;
+
+}
+
+.janelaSobre{
+    height: 340px;
+    width: 290px;
+
+    display: inline-block;
+    margin: 0 50px 0 92px;
+
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    
+    border-radius: 10px;
+}
+
+.janelaSobre ul li{
+    list-style: none;
+    text-align: center;
+    
+}
+
+.janelaSobre ul li i{
+    margin-top: 30px;
+    height: 120px;
+    width: 120px;
+
+    background-color: white;
+    color: rgb(32, 15, 15);
+    font-size: 44pt;
+    padding-top: 30px;
+    border-radius: 50%;
+
+    box-shadow: 4px 4px 10px black;
+}
+
+.janelaSobre ul li h3{
+    font-weight: 500;
+    margin-top: 10px;
+    color: white;
+}
+
+.janelaSobre ul li h2{
+    margin-top: 35px;
+    color: white;
+}
+
+/*Aba de pizzas
+--------------------------------------*/
+.pizzas{
+    height: 900px;
+    background-color:brown;
+    position: relative;
+}
+
+.pizzaCabeca{
+    color:white;
+    font-size: 24pt;
+    text-align: center;
+    left: 50%;
+    transform: translateX(-50%);
+    position: absolute;
+    padding-top: 35px;
+}
+
+.pizzaCabeca h1{
+    text-shadow:2px 2px 5px rgb(19, 6, 6);
+}
+
+.pizzaCabeca h4{
+    font-weight: 500;
+}
+
+.janelaPizza{
+    width: 300px;
+    height: 600px;
+    display: inline-block;
+
+    position: relative;
+    top: 68%;
+    left: 185px;
+    transform: translateY(-70%);
+    margin-right: 50px;
+   
+    border: 2px solid white;
+    border-radius: 10px;
+    box-shadow: 4px 4px 10px black;
+}
+
+.janelaPizza_Btn{
+    cursor: pointer;
+    position: absolute;
+    left: 50%;
+    top: 440px;
+    transform: translateX(-50%);
+
+    height: 60px;
+    width: 150px;
+    
+    border: none;
+    border-radius: 10px 3px 10px 3px;
+    color: black;
+    background-color: white;
+    font-weight: bold;
+    font-size: 11pt;
+    box-shadow: 1px 1px 10px black;
+
+    transition: 0.4s;
+}
+
+.janelaPizza_Btn:hover{
+    background-color: rgb(32, 15, 15);
+    color: white;
+}
+.janelaPizza ul{
+    list-style: none;
+    color: white;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.janelaPizza ul li i{
+    font-size: 32pt;
+    margin-bottom: 20px;
+}
+
+.janelaPizza ul li p{
+    margin: 0 0 12px 30px;
+    text-align: left;
+}
+.janelaPizza ul li h4{
+    font-weight: 500;
+}
+
+.janelaPizza ul li hr{
+    width: 85%;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    border: 1px dashed white;
+
+    margin: 20px 0 20px 0;
+}
+
+
+/*Contato
+-------------------------------------------*/
+.contato{
+    background-color: rgb(32, 15, 15);
+    height: 645px;
+    position: relative;
+}
+
+.contato h1{
+    color: white;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 35px;
+    text-shadow:2px 2px 5px black;
+    font-size: 36pt;
+}
+
+.iconesContato{
+    position: absolute;
+    left: 50%;
+    top: 110px;
+    transform: translateX(-50%);
+}
+
+.iconesContato a i{
+    color: rgb(32, 15, 15);
+    background-color: white;
+    font-size: 26pt;
+
+    margin-right: 30px;
+    height: 50px;
+    width: 50px;
+   
+    border-radius: 10px 3px 10px 3px;
+    text-align: center;
+    line-height: 50px;
+    box-shadow: 1px 1px 8px black;
+
+    transition: 0.4s;
+}
+
+.iconesContato a i:hover{
+    background-color:brown;
+    color: white;
+}
+
+.formularioContato{
+    position: absolute;
+    display: grid;
+    top: 82%;
+    left: 50%;
+    transform: translate(-50%,-80%);
+}
+
+.formularioContato h3{
+    color: white;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.formularioContato input{
+    margin-bottom: 10px;
+    height: 35px;
+    width: 400px;
+    border: none;
+    border-radius: 2px;
+}
+
+#txtArea{
+    height: 150px;
+}
+
+#contato_btnEnviar{
+    height: 50px;
+    width: 100px;
+    cursor: pointer;
+    position: relative;
+    left:50%;
+    top:10px;
+    transform: translateX(-50%);
+
+    border: none;
+    border-radius: 10px 3px 10px 3px;
+    color: black;
+    background-color: white;
+    font-weight: bold;
+    font-size: 11pt;
+
+    box-shadow: 1px 1px 10px black;
+    transition: 0.4s;
+}
+
+#contato_btnEnviar:hover{
+    background-color:brown;
+    color: white;
+}
+/*Rodapé
+---------------------------------------------------*/
+.rodape{
+    height: 24px;
+    background-color:brown;
+    text-align: center;
+    color:white;
+    line-height: 24px;
+}
+
+/*Responsivo
+-------------------------------------------*/
+
+@media (max-width: 768px){
+    /*menu
+    ------------------------------------*/
+    .logo{
+        left: 7%;
+        width: fit-content;
+    }
+
+    #listaMenu{
+        top: 85px;
+        left: 6%;
+        text-align: center;
+    }
+
+    #menuBarra{
+        display: block;
+        left: 82%;
+    }
+
+    /*corpo
+    ------------------------------------------*/
+    .corpo{
+        left:30px;
+        width: 100%;
+    }
+
+    .corpo p{
+        font-size: 20pt;
+        width: 80%;
+    }
+
+    /*sobre nós
+    ------------------------------------------------*/
+    .sobre{
+        height: 1200px;
+        width: 100%;
+    }
+
+    .sobre hr{
+        display: none;
+    }
+
+    .sobre h1{
+        font-size: 24pt;
+        text-align: center;
+    }
+
+    .janelaSobre{
+        top: 25%;
+        left: 16%;
+    }
+
+    /*aba das pizzas
+    -------------------------------*/
+    .pizzas{
+        height: 2200px;
+        width:100%;
+    }
+
+    .pizzaCabeca h1{
+        font-size: 26pt;
+    }
+
+    .pizzaCabeca h4{
+        font-size: 20pt;
+        margin-top: 10px;
+    }
+
+    .janelaPizza{
+        display: grid;
+        left: 50%;
+        top: 12%;
+        transform: translateX(-50%);
+        margin-bottom: 20px;
+    }
+
+    /*aba de contatos
+    ------------------------------------*/
+    .contato{
+        height: 750px;
+        width: 100%;
+    }
+    .contato h1{
+        top: 30px;
+        font-size: 26pt;
+        margin-bottom: 10px;
+        left: 50%;
+        text-align: center;
+    }
+
+    .iconesContato{
+        left: 50%;
+        top:84%;
+    }
+
+    .iconesContato a i{
+        width: 42px;
+        height: 42px;
+
+        font-size: 22pt;
+        line-height: 42px;
+        margin-right: 15px;
+    }
+
+    .formularioContato{
+        top: 60%;
+    }
+
+}
+
+
+/*Responsivo mobile
+-----------------------------------------------*/
+@media (max-width: 540px){
+    /*menu
+    ------------------------------------------------*/
+
+    /*corpo
+    ------------------------------------------*/
+    .corpo{
+        width: 480px;
+    }
+    
+    /*sobre nós
+    ------------------------------------------------*/
+    .sobre{
+        width: 540px;
+    }
+
+    .sobre h1{
+        width: 350px;
+    }
+
+    .janelaSobre{
+        left: 6%;
+    }
+
+    /*aba das pizzas
+    -------------------------------*/
+    .pizzas{
+        width: 540px;
+    }
+
+    .pizzas h1{
+        font-size: 24pt;
+        width: 350px;
+    }
+
+    /*aba de contatos
+    ------------------------------------*/
+    .contato{
+        height: 750px;
+        width: 540px;
+    }
+
+    .contato h1{
+        font-size: 24pt;
+        width: 350px;
+    }
+
+}
